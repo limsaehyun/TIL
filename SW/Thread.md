@@ -1,4 +1,4 @@
-------
+# Thread(쓰레드)
 
 ## Thread(쓰레드)란 무엇인가?
 
@@ -21,18 +21,24 @@
 - 각 쓰레드별로 자신만의 스택과 레지스터를 가진다.
 
   
+![1](https://user-images.githubusercontent.com/80076029/137870355-5dedc2ee-1775-4c20-94ba-2dbd4206237a.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd228c3f-1e28-4315-b57a-96622a074216/Untitled.png)
+
 
 - 한 순간에 하나의 쓰레드만 실행 가능
 
   
 
+
 ### Thread의 생성주기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7605414a-881d-4ff2-9f66-293c9f16afd0/Untitled.png)
+![2](https://user-images.githubusercontent.com/80076029/137870372-8f70b22b-c7c1-4a0c-82e8-70246a1f3f1a.png)
 
-[생성주기](https://www.notion.so/2c0ede7fb0c449b2a2585a8c2cd39443)
+
+![3](https://user-images.githubusercontent.com/80076029/137870405-21b91e7d-a3d9-48d0-adff-a4970c80c76a.png)
+
+
+
 
 ## Thread의 생명 주기
 
@@ -47,6 +53,7 @@
 - start() 메서드를 호출하면 run() 메서드에 설정된 스레드가 RUnnable상태로 진입한다.
 
   
+  
 
 ### Running (실행상태)
 
@@ -57,6 +64,7 @@
 - Runnable(준비상태)에 있는 여러 스레드 중 우선 순위를 가진 스레드가 결정되면 JVM이 자동으로 run() 메서드를 호출하여 스레드가 RUnning 상태로 진입
 
   
+  
 
 ### DEAD (종료상태)
 
@@ -64,14 +72,15 @@
 
   
 
+
 ### Blocked (지연 상태)
 
 - CPU를 점유권을 상실한 상태
 
 
 
-참고 문헌
 
-------
+### 참고 문헌
+
 
 https://coding-factory.tistory.com/
